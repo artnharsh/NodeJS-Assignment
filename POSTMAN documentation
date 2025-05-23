@@ -1,0 +1,30 @@
+--POST request
+{
+  "name": "Craze Children School",
+  "address": "Khadakwasla, Pune",
+  "latitude": 15.1204,
+  "longitude": 83.1567
+}
+
+--GET request
+
+http://localhost:3000/listSchools?latitude=15.1204&longitude=83.1567
+
+GET /listSchools
+This endpoint retrieves a list of schools based on the provided latitude and longitude.
+Request Parameters
+latitude (number) - The latitude coordinate for the location.
+longitude (number) - The longitude coordinate for the location.
+
+Response
+Upon a successful request, the server responds with a status code of 200 and a JSON array containing school objects with the following properties:
+id (number) - The unique identifier for the school.
+name (string) - The name of the school.
+address (string) - The address of the school.
+latitude (number) - The latitude coordinate of the school location.
+longitude (number) - The longitude coordinate of the school location.
+distance (number) - The distance of the school from the provided latitude and longitude coordinates.
+
+In the example response, the actual values for the properties are masked for privacy.
+
+
