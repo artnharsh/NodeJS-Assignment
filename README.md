@@ -32,11 +32,12 @@ A Node.js + Express.js + MySQL-based API to manage schools and sort them by prox
    DB_NAME=your_db_name
    PORT=3000
 4.**create mysql table**
-  ```bash
-  CREATE TABLE schools (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255),
-  address VARCHAR(255),
-  latitude FLOAT,
-  longitude FLOAT
-); 
+   
+     CREATE TABLE schools (
+     id INT AUTO_INCREMENT PRIMARY KEY,
+     name VARCHAR(255),
+     address VARCHAR(255),
+     latitude FLOAT,
+     longitude FLOAT
+      ); 
+5. **npm start**
